@@ -1,5 +1,4 @@
 import myLogo from "/logo.png";
-import "./navbar.css";
 import { Link } from "react-router-dom";
 import { TbShoppingCart } from "react-icons/tb";
 
