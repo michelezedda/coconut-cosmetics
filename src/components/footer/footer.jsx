@@ -6,27 +6,45 @@ function Footer() {
 
   return (
     <>
-      <footer>
-        <div className="footer-container">
-          <div className="social-media">
+      <footer className="text-white bg-slate-800 p-4 mt-40">
+        <div className="container">
+          <div className="flex justify-between p-6 leading-8">
+            <ul>
+              <li>About Us</li>
+              <li>Payments Method</li>
+              <li>Shipping</li>
+              <li>Returns</li>
+              <li>Contact Us</li>
+            </ul>
+            <ul>
+              <li>Terms and Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Cookie Policy</li>
+              <li>Cookie Preferences</li>
+              <li>Career Opportunities</li>
+            </ul>
+            <ul>
+              <li>Sign Up</li>
+              <li>Sing In</li>
+              <li>My Account</li>
+              <li>Wishlist</li>
+              <li>Order Tracking</li>
+            </ul>
+          </div>
+          <div className="flex justify-center items-center  gap-2 mt-4">
             <a href="https://www.facebook.com/" target="_blank">
-              <FaFacebookSquare /> &nbsp;
+              <FaFacebookSquare />
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-              <FaInstagram /> &nbsp;
+              <FaInstagram />
             </a>
             <a href="https://www.x.com/" target="_blank">
               <FaXTwitter />
             </a>
+            <p>
+              Copyright © {currentYear} coconut. cosmetics - All rights reserved
+            </p>
           </div>
-          <p>
-            Copyright © {currentYear} coconut. cosmetics - All rights reserved
-            &nbsp; | &nbsp;
-            <span>About us</span> &nbsp; | &nbsp;
-            <span> Terms and Conditions</span> &nbsp; | &nbsp;
-            <span>Cookie Policy</span> &nbsp; | &nbsp;
-            <span>Privacy Policy</span>
-          </p>
         </div>
       </footer>
     </>

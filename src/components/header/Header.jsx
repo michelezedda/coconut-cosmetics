@@ -1,15 +1,11 @@
-import myCoconut from "../../../public/coconut.png";
-
 function Header() {
   return (
     <>
-      <div className="header-container">
-        <div className="header-wrapper">
-          <h1 className="text-3xl font-bold underline text-yellow-400 bg-red-300">
-            Welcome to coconut. cosmetics
-          </h1>
+      <div className="container">
+        <div className="grid grid-cols-2 gap-2">
+          <div className="bg-slate-300 p-20">DAY CARE</div>
+          <div className="bg-green-300 p-20">NIGHT CARE</div>
         </div>
-        <img src={myCoconut} alt="coconut" />
       </div>
     </>
   );
