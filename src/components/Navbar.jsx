@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex sticky top-0 z-100 justify-between items-center shadow-md shadow-slate-400 mb-10 bg-white">
+      <nav className="flex sticky top-0 z-50 justify-between items-center shadow-md shadow-slate-400 mb-10 bg-white">
         <Link to="/">
           <img src={myLogo} alt="coconut-cosmetics logo" className="px-8" />
         </Link>
