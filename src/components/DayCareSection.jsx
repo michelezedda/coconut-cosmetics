@@ -29,12 +29,13 @@ const DayCareSection = () => {
       <>
         <div className="container pt-16">
           <div className="lg:flex justify-between items-center">
-            <div>
+            <div className="mb-6">
               <h3 className="font-medium text-2xl">day care</h3>
               <p className="text-gray-600 mt2">brighten and protect daily</p>
             </div>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 pt-8 gap-2">
+
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
             <div>
               <img
                 className="w-full h-full object-cover"

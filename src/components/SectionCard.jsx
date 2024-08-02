@@ -3,7 +3,7 @@ import { IoBagHandle } from "react-icons/io5";
 function SectionCard({ img, name, price, rating }) {
   return (
     <>
-      <div className="border border-gray-200 hover:border-gray-300 hover:scale-105 transition-transform rounded-lg relative">
+      <div className="bg-white border border-gray-200 hover:border-gray-300 hover:scale-105 transition-transform rounded-lg relative">
         <img src={img} alt={name} />
         <div className="space-y-2 relative p-4">
           <div className="flex gap-[2px] text-[15px]">{rating}</div>
