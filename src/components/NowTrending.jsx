@@ -3,7 +3,7 @@ function NowTrending() {
     <>
       <div className="container">
         <h1 className="flex font-bold text-2xl justify-center items-center">
-          NOW TRENDING
+          now trending
         </h1>
         <div className="grid grid-cols-2 items-center justify-center gap-2">
           <div className="bg-slate-300 p-20">DISPLAY A</div>

@@ -7,7 +7,7 @@ function Newsletter() {
           style={{ backgroundImage: "url(../public/background.png)" }}
         >
           <p className="flex justify-center items-center font-bold text-2xl">
-            NEWSLETTER
+            newsletter
           </p>
         </div>
       </div>

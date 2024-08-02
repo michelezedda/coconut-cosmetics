@@ -1,10 +1,10 @@
 import myLogo from "/logo.png";
 import { Link } from "react-router-dom";
-import { TbShoppingCart } from "react-icons/tb";
+import { IoBagHandle } from "react-icons/io5";
 import { FaSun, FaMoon } from "react-icons/fa";
-import { MdAccountCircle } from "react-icons/md";
-
+import { RiUser3Fill } from "react-icons/ri";
 import { useState } from "react";
+import CartBadge from "./CartBadge";
 
 function Navbar() {
   const [theme, setTheme] = useState("light");
@@ -23,20 +23,21 @@ function Navbar() {
         <Link to="/">
           <img src={myLogo} alt="coconut-cosmetics logo" className="px-8" />
         </Link>
-        <ul className="flex space-x-4 text-2xl px-8">
-          <li>categories</li>
-          <li>
-            <TbShoppingCart />
+        <ul className="flex space-x-4 text-2xl px-8 place-items-center">
+          <li className="icon-wrapper relative">
+            <IoBagHandle />
+            <CartBadge size="w-[25px] h-[25px]" />
           </li>
           <li
+            className="icon-wrapper"
             onClick={() => {
               changeTheme();
             }}
           >
             <FaSun />
           </li>
-          <li>
-            <MdAccountCircle />
+          <li className="icon-wrapper">
+            <RiUser3Fill />
           </li>
         </ul>
       </nav>
