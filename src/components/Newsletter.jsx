@@ -1,13 +1,26 @@
 import { BsMailbox2 } from "react-icons/bs";
+import { BsSendFill } from "react-icons/bs";
+import Swal from "sweetalert2";
 
 function Newsletter() {
+  const handleClick = () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  };
   return (
     <>
-      <div className="container">
-        <div className="p-6 rounded-md" style={{ backgroundColor: "#d6e7ff" }}>
+      <div
+        className="p-6 pl-20 pr-20 mt-24"
+        style={{ backgroundColor: "#d6e7ff" }}
+      >
+        <div className="container">
           <p className="flex justify-between">
-            <div className="flex">
-              <div className="text-6xl mr-2 flex">
+            <div className="flex text-slate-800">
+              <div className="text-6xl flex">
                 <BsMailbox2 />
               </div>
               <div className="flex flex-col ml-6">
@@ -20,24 +33,25 @@ function Newsletter() {
                 <input
                   type="email"
                   placeholder="Enter your email address"
-                  className="border-2 border-black w-xl rounded-lg p-2 text-xl"
+                  className="border-2 border-slate-800 rounded-full p-4 w-[500px] text-xl text-slate-800"
                   required
                 />
                 <button
-                  className="border-2 border-black bg-white rounded-lg p-2 text-xl ml-4 active:scale-95"
+                  className="border-2 border-slate-800 text-white bg-slate-800 rounded-full p-3 text-xl ml-4 active:scale-95 relative right-[74px] top-[2px]"
                   type="submit"
+                  onClick={handleClick}
+                  required
                 >
-                  Subscribe
+                  <BsSendFill />
                 </button>
-              </form>
-              <div className="flex mt-2">
-                <label>
-                  <input type="checkbox" />
+                <label className="flex mt-2 ml-4">
+                  <input type="checkbox" className="mr-1" required />
+                  <p className="text-sm">
+                    By submitting this form, you agree to the privacy policy*
+                  </p>
                 </label>
-                <p className="text-sm ml-1">
-                  By submitting this form, you agree to the privacy policy*
-                </p>
-              </div>
+              </form>
+              <div className="flex mt-2"></div>
             </div>
           </p>
         </div>

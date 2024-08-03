@@ -6,9 +6,9 @@ import { MdOutlinePets } from "react-icons/md";
 function Header() {
   return (
     <>
-      <div className="bg-slate-400 h-[150px] flex gap-10 justify-center items-center">
+      <div className="bg-slate-400 h-[150px] flex gap-20 justify-center items-center text-white">
         <div className="flex place-items-center">
-          <span className="info-wrapper text-4xl text-white">
+          <span className="info-wrapper text-4xl">
             <FaShippingFast />
           </span>
           <div className="ml-2">
@@ -17,7 +17,7 @@ function Header() {
           </div>
         </div>
         <div className="flex place-items-center">
-          <span className="info-wrapper text-4xl text-white">
+          <span className="info-wrapper text-4xl">
             <FaLeaf />
           </span>
           <div className="ml-2">
@@ -26,7 +26,7 @@ function Header() {
           </div>
         </div>
         <div className="flex place-items-center">
-          <span className="info-wrapper text-4xl text-white">
+          <span className="info-wrapper text-4xl">
             <MdOutlinePets />
           </span>
           <div className="ml-2">
@@ -35,7 +35,7 @@ function Header() {
           </div>
         </div>
         <div className="flex place-items-center">
-          <span className="info-wrapper text-4xl text-white">
+          <span className="info-wrapper text-4xl">
             <MdOutlineSupportAgent />
           </span>
           <div className="ml-2">

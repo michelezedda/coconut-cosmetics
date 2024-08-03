@@ -7,9 +7,9 @@ export default {
       center: true,
       padding: "15px",
       lineHeight: "32px",
-    },
-    fontFamily: {
-      spartan: ["League Spartan", "sans-serif"],
+      fontFamily: {
+        spartan: ["League Spartan", "sans-serif"],
+      },
     },
   },
   plugins: [

@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="text-white bg-slate-800 p-4 mt-40">
+      <footer className="text-white bg-slate-800 p-4">
         <div className="container">
           <div className="flex justify-between p-6 leading-8">
             <ul>
