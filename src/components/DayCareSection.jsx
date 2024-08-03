@@ -23,6 +23,13 @@ const DayCareSection = () => {
       price: 40,
       rating: "⭐⭐⭐⭐⭐",
     },
+    {
+      id: 3,
+      name: "sun screen",
+      img: "../public/sunscreen.png",
+      price: 50,
+      rating: "⭐⭐⭐⭐⭐",
+    },
   ];
   return (
     <>
@@ -30,8 +37,8 @@ const DayCareSection = () => {
         <div className="container pt-16">
           <div className="lg:flex justify-between items-center">
             <div className="mb-6">
-              <h3 className="font-medium text-2xl">day care</h3>
-              <p className="text-gray-600 mt2">brighten and protect daily</p>
+              <h3 className="font-medium text-2xl">DAY CARE</h3>
+              <p className="text-gray-600 mt2">Brighten and protect daily</p>
             </div>
           </div>
 

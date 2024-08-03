@@ -23,6 +23,13 @@ const NightCareSection = () => {
       price: 40,
       rating: "⭐⭐⭐⭐⭐",
     },
+    {
+      id: 3,
+      name: "anti-age serum",
+      img: "../public/antiage-serum.jpeg",
+      price: 20,
+      rating: "⭐⭐⭐⭐⭐",
+    },
   ];
   return (
     <>
@@ -30,8 +37,8 @@ const NightCareSection = () => {
         <div className="container pt-16">
           <div className="lg:flex justify-between items-center">
             <div className="mb-6">
-              <h3 className="font-medium text-2xl">night care</h3>
-              <p className="text-gray-600 mt2">restore and renew at night</p>
+              <h3 className="font-medium text-2xl">NIGHT CARE</h3>
+              <p className="text-gray-600 mt2">Restore and renew at night</p>
             </div>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">

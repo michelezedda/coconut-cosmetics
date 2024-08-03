@@ -31,16 +31,18 @@ function Footer() {
               <li>Order Tracking</li>
             </ul>
           </div>
-          <div className="flex justify-center items-center  gap-2 mt-4">
-            <a href="https://www.facebook.com/" target="_blank">
-              <FaFacebookSquare />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <FaInstagram />
-            </a>
-            <a href="https://www.x.com/" target="_blank">
-              <FaXTwitter />
-            </a>
+          <div className="flex flex-col justify-center items-center gap-2 mt-4">
+            <div className="flex gap-4 text-2xl">
+              <a href="https://www.facebook.com/" target="_blank">
+                <FaFacebookSquare />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <FaInstagram />
+              </a>
+              <a href="https://www.x.com/" target="_blank">
+                <FaXTwitter />
+              </a>
+            </div>
             <p>
               Copyright © {currentYear} coconut. cosmetics - All rights reserved
             </p>

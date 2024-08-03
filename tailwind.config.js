@@ -19,6 +19,10 @@ export default {
           cursor: "pointer",
           color: "#748be4",
         },
+        "a:hover": {
+          cursor: "pointer",
+          color: "#748be4",
+        },
       });
     },
   ],
