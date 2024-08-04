@@ -14,16 +14,7 @@ export default {
   },
   plugins: [
     function ({ addComponents }) {
-      addComponents({
-        "li:hover": {
-          cursor: "pointer",
-          color: "#748be4",
-        },
-        "a:hover": {
-          cursor: "pointer",
-          color: "#748be4",
-        },
-      });
+      addComponents({});
     },
   ],
 };

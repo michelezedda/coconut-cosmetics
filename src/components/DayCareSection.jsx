@@ -1,58 +1,13 @@
-import SectionCard from "./SectionCard";
+import ProductCard from "./ProductCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import products from "./data/products";
 
 const DayCareSection = () => {
-  const data = [
-    {
-      id: 0,
-      name: "eye serum",
-      img: "../public/eye-serum.png",
-      price: 20,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "dayCare",
-    },
-    {
-      id: 1,
-      name: "face cleanser",
-      img: "../public/face-cleanser.png",
-      price: 30,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "dayCare",
-    },
-    {
-      id: 2,
-      name: "face moisturizer",
-      img: "../public/face-moisturizer.png",
-      price: 40,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "dayCare",
-    },
-    {
-      id: 3,
-      name: "sun screen",
-      img: "../public/sunscreen.png",
-      price: 50,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "dayCare",
-    },
-    {
-      id: 4,
-      name: "body cream",
-      img: "../public/body-cream.jpeg",
-      price: 60,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "dayCare",
-    },
-    {
-      id: 5,
-      name: "lip balm",
-      img: "../public/lipbalm.png",
-      price: 70,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "dayCare",
-    },
-  ];
+  const DayCareProducts = products ? [...products] : [];
+  let data = DayCareProducts.filter(
+    (item) => item.label === "dayCare" || item.label === "both"
+  );
 
   return (
     <>
@@ -85,7 +40,7 @@ const DayCareSection = () => {
               >
                 {data.map((item) => (
                   <SplideSlide key={item.id}>
-                    <SectionCard
+                    <ProductCard
                       key={item.id}
                       img={item.img}
                       name={item.name}

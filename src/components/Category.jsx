@@ -31,8 +31,8 @@ function Category() {
   return (
     <>
       <div className="container pt-16">
-        <h1 className="flex font-bold text-2xl justify-center items-center">
-          categories
+        <h1 className="flex text-4xl justify-center items-center mb-10">
+          CATEGORIES
         </h1>
         <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {data.map((item) => (

@@ -1,50 +1,14 @@
-import SectionCard from "./SectionCard";
+import ProductCard from "./ProductCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import products from "./data/products";
 
 const NightCareSection = () => {
-  const data = [
-    {
-      id: 0,
-      name: "night face serum",
-      img: "../public/night-face-serum.png",
-      price: 20,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "nightCare",
-    },
-    {
-      id: 1,
-      name: "night face cream",
-      img: "../public/night-cream.png",
-      price: 30,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "nightCare",
-    },
-    {
-      id: 2,
-      name: "face cleanser",
-      img: "../public/face-cleanser.png",
-      price: 40,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "nightCare",
-    },
-    {
-      id: 3,
-      name: "anti-age serum",
-      img: "../public/antiage-serum.jpeg",
-      price: 20,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "nightCare",
-    },
-    {
-      id: 4,
-      name: "night tonic",
-      img: "../public/night-tonic.png",
-      price: 30,
-      rating: "⭐⭐⭐⭐⭐",
-      label: "nightCare",
-    },
-  ];
+  const NightCareProducts = products ? [...products] : [];
+  let data = NightCareProducts.filter(
+    (item) => item.label === "nightCare" || item.label === "both"
+  );
+
   return (
     <>
       <>
@@ -76,7 +40,7 @@ const NightCareSection = () => {
               >
                 {data.map((item) => (
                   <SplideSlide key={item.id}>
-                    <SectionCard
+                    <ProductCard
                       key={item.id}
                       img={item.img}
                       name={item.name}

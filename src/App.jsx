@@ -4,7 +4,6 @@ import Cart from "./components/Cart";
 import Header from "./components/Header";
 import DayCareSection from "./components/DayCareSection";
 import NightCareSection from "./components/NightCareSection.jsx";
-import BestSellers from "./components/BestSellers";
 import Newsletter from "./components/Newsletter";
 import NowTrending from "./components/NowTrending";
 import Footer from "./components/Footer";
@@ -23,7 +22,6 @@ function App() {
       <DayCareSection />
       <NightCareSection />
       <Category />
-      <BestSellers />
       <NowTrending />
       <Newsletter />
       <Footer />
