@@ -1,4 +1,6 @@
 import SectionCard from "./SectionCard";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 
 const NightCareSection = () => {
   const data = [
@@ -8,6 +10,7 @@ const NightCareSection = () => {
       img: "../public/night-face-serum.png",
       price: 20,
       rating: "⭐⭐⭐⭐⭐",
+      label: "nightCare",
     },
     {
       id: 1,
@@ -15,6 +18,7 @@ const NightCareSection = () => {
       img: "../public/night-cream.png",
       price: 30,
       rating: "⭐⭐⭐⭐⭐",
+      label: "nightCare",
     },
     {
       id: 2,
@@ -22,6 +26,7 @@ const NightCareSection = () => {
       img: "../public/face-cleanser.png",
       price: 40,
       rating: "⭐⭐⭐⭐⭐",
+      label: "nightCare",
     },
     {
       id: 3,
@@ -29,6 +34,15 @@ const NightCareSection = () => {
       img: "../public/antiage-serum.jpeg",
       price: 20,
       rating: "⭐⭐⭐⭐⭐",
+      label: "nightCare",
+    },
+    {
+      id: 4,
+      name: "night tonic",
+      img: "../public/night-tonic.png",
+      price: 30,
+      rating: "⭐⭐⭐⭐⭐",
+      label: "nightCare",
     },
   ];
   return (
@@ -41,23 +55,38 @@ const NightCareSection = () => {
               <p className="text-gray-600 mt2">Restore and renew at night</p>
             </div>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2">
-            <div>
+          <div className="grid sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-2">
+            <div className="col-span-1">
               <img
                 className="w-full h-full object-cover"
                 src="../public/night.png"
                 alt="banner"
               />
             </div>
-            {data.map((item) => (
-              <SectionCard
-                key={item.id}
-                img={item.img}
-                name={item.name}
-                price={item.price}
-                rating={item.rating}
-              />
-            ))}
+            <div className="w-full col-span-4">
+              <Splide
+                options={{
+                  perPage: 4,
+                  perMove: 1,
+                  gap: "1rem",
+                  pagination: false,
+                  arrows: true,
+                  type: "loop",
+                }}
+              >
+                {data.map((item) => (
+                  <SplideSlide key={item.id}>
+                    <SectionCard
+                      key={item.id}
+                      img={item.img}
+                      name={item.name}
+                      price={item.price}
+                      rating={item.rating}
+                    />
+                  </SplideSlide>
+                ))}
+              </Splide>
+            </div>
           </div>
         </div>
       </>

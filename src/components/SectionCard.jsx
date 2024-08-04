@@ -21,7 +21,7 @@ function SectionCard({ img, name, price, rating }) {
           <h3 className="text-2xl font-medium text-red-600">$ {price}</h3>
           <button
             onClick={handleClick}
-            className="absolute -top-4 right-2 bg-green-700 text-white text-[28px] w-[50px] h-[50px] rounded-full grid place-items-center cursor-pointer"
+            className="absolute -top-4 right-2 bg-slate-700 text-white text-[28px] w-[50px] h-[50px] rounded-full grid place-items-center cursor-pointer"
           >
             <IoBagHandle />
           </button>
