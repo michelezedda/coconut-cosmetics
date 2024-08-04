@@ -19,14 +19,18 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex sticky top-0 z-40 justify-between items-center bg-white">
+      <nav className="flex sticky top-0 z-40 justify-between items-center bg-white p-4 md:p-8">
         <Link to="/">
-          <img src={myLogo} alt="coconut-cosmetics logo" className="px-8" />
+          <img
+            src={myLogo}
+            alt="coconut-cosmetics logo"
+            className="h-8 md:h-12"
+          />
         </Link>
-        <ul className="flex space-x-4 text-2xl px-8 place-items-center">
+        <ul className="flex space-x-4 text-xl md:text-2xl place-items-center">
           <li className="icon-wrapper relative">
             <IoBagHandle />
-            <CartBadge size="w-[25px] h-[25px]" />
+            <CartBadge size="w-[20px] h-[20px] md:w-[25px] md:h-[25px]" />
           </li>
           <li
             className="icon-wrapper"
@@ -34,8 +38,8 @@ function Navbar() {
               changeTheme();
             }}
           >
-            <FaSun />
-            <FaMoon />
+            <FaSun className="hidden dark:block" />
+            <FaMoon className="block dark:hidden" />
           </li>
           <li className="icon-wrapper">
             <RiUser3Fill />

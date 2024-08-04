@@ -14,7 +14,7 @@ function ProductCard({ name, img, price, rating }) {
 
   return (
     <>
-      <div className="bg-white border border-gray-200 hover:border-gray-300 hover:scale-105 transition-transform rounded-lg relative">
+      <div className="bg-white border border-gray-300 hover:border-gray-400 hover:scale-105 transition-transform rounded-lg relative">
         <img src={img} alt={name} />
         <div className="space-y-2 relative p-4">
           <div className="flex gap-[2px] text-[15px]">{rating}</div>
@@ -22,7 +22,7 @@ function ProductCard({ name, img, price, rating }) {
           <h3 className="text-2xl font-medium text-red-600">$ {price}</h3>
           <button
             onClick={handleClick}
-            className="absolute -top-4 right-2 bg-slate-700 active:scale-95 text-white text-[28px] w-[50px] h-[50px] rounded-full grid place-items-center cursor-pointer"
+            className="absolute -top-4 right-2 bg-slate-500 active:scale-95 text-white text-[28px] w-[50px] h-[50px] rounded-full grid place-items-center cursor-pointer"
           >
             <IoBagHandle />
           </button>
