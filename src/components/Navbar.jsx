@@ -8,7 +8,7 @@ import CartBadge from "./CartBadge";
 function Navbar({ setShowCart }) {
   return (
     <>
-      <nav className="flex sticky top-0 z-40 justify-between items-center bg-white p-2 md:px-10">
+      <nav className="flex sticky top-0 z-50 justify-between items-center bg-white p-2 md:px-10">
         <Link to="/">
           <img
             src={myLogo}
