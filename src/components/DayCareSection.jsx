@@ -20,7 +20,7 @@ const DayCareSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-2">
         <div className="col-span-1 mb-4 md:mb-0">
           <img
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover hidden md:flex"
             src="../public/day.png"
             alt="banner"
           />

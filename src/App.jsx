@@ -7,7 +7,6 @@ import NightCareSection from "./components/NightCareSection.jsx";
 import Newsletter from "./components/Newsletter";
 import NowTrending from "./components/NowTrending";
 import Footer from "./components/Footer";
-import Category from "./components/Category";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
       <Header />
       <DayCareSection />
       <NightCareSection />
-      <Category />
       <NowTrending />
       <Newsletter />
       <Footer />

@@ -19,12 +19,12 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex sticky top-0 z-40 justify-between items-center bg-white p-4 md:p-8">
+      <nav className="flex sticky top-0 z-40 justify-between items-center bg-white p-2 md:px-10">
         <Link to="/">
           <img
             src={myLogo}
             alt="coconut-cosmetics logo"
-            className="h-8 md:h-12"
+            className="h-14 lg:h-16"
           />
         </Link>
         <ul className="flex space-x-4 text-xl md:text-2xl place-items-center">

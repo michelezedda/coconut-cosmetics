@@ -41,9 +41,9 @@ function Newsletter() {
 
   return (
     <div className="p-6 mt-48 bg-blue-100">
-      <div className="container mx-auto">
+      <div className="container">
         <div className="flex flex-col md:flex-row justify-between gap-10">
-          <div className="flex text-slate-800">
+          <div className="flex text-slate-800 place-content-center">
             <div className="text-6xl flex">
               <BsMailbox2 />
             </div>
@@ -52,28 +52,27 @@ function Newsletter() {
               <p className="text-lg">... and get 10% off your first order!</p>
             </div>
           </div>
-          <div className="flex flex-col place-items-center">
-            <form
-              onSubmit={handleClick}
-              className="flex flex-col md:flex-row items-center"
-            >
+          <form onSubmit={handleClick}>
+            <div className="flex justify-center items-center space-y-0 mb-4">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
-                className="border-2 border-slate-800 rounded-full p-4 w-full md:w-[500px] text-xl text-slate-800"
+                className="border-2 border-slate-800 rounded-full p-4 w-full text-xl text-slate-800"
               />
               <button
-                className="border-2 border-slate-800 text-white bg-slate-800 rounded-full p-3 text-xl ml-0 md:ml-4 mt-2 md:mt-0 active:scale-9 right-[75px] relative sm:bottom-16 sm:relative sm:left-40"
+                className="border-2 border-slate-800 text-white bg-slate-800 rounded-full p-3 text-xl -ml-[55px] active:scale-95"
                 type="submit"
               >
                 <BsSendFill />
               </button>
-              <label className="flex mt-2 ml-4">
+            </div>
+            <div className="flex place-content-center">
+              <label className="flex">
                 <input
+                  className="border w-6 sm:w-4 text-xl text-slate-800 mr-1"
                   type="checkbox"
-                  className="mr-1"
                   checked={isChecked}
                   onChange={(e) => setIsChecked(e.target.checked)}
                 />
@@ -81,8 +80,8 @@ function Newsletter() {
                   By submitting this form, you agree to the privacy policy*
                 </p>
               </label>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
