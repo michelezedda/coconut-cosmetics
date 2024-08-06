@@ -86,6 +86,7 @@ const products = [
     id: 8,
     name: "BODY OIL",
     img: bodyOilPic,
+    price: 12.99,
     rating: "⭐⭐⭐⭐",
     label: "both",
   },
