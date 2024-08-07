@@ -1,15 +1,16 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
-// Create the Cart context
-const CartContext = createContext();
+// Create the context
+const AppContext = createContext();
 
-// Create a custom hook to use the Cart context
-export const useCartContext = () => useContext(CartContext);
+// Create a custom hook to use the context
+export const useAppContext = () => useContext(AppContext);
 
 // Create a provider component
-export const CartProvider = ({ children }) => {
+export const AppProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [showCart, setShowCart] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
   const [shippingPrice, setShippingPrice] = useState(0);
 
   useEffect(() => {
@@ -44,7 +45,7 @@ export const CartProvider = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider
+    <AppContext.Provider
       value={{
         cart,
         addToCart,
@@ -53,9 +54,11 @@ export const CartProvider = ({ children }) => {
         shippingPrice,
         showCart,
         setShowCart,
+        showProfile,
+        setShowProfile,
       }}
     >
       {children}
-    </CartContext.Provider>
+    </AppContext.Provider>
   );
 };

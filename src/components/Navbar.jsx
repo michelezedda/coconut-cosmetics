@@ -1,13 +1,16 @@
 import myLogo from "/logo.png";
 import { Link } from "react-router-dom";
 import { IoBagHandle } from "react-icons/io5";
-import { FaSun, FaMoon } from "react-icons/fa";
 import { RiUser3Fill } from "react-icons/ri";
 import CartBadge from "./CartBadge";
 
-function Navbar({ setShowCart }) {
+function Navbar({ setShowCart, setShowProfile }) {
   const cartToggle = () => {
     setShowCart((prev) => !prev);
+  };
+
+  const profileToggle = () => {
+    setShowProfile((prev) => !prev);
   };
 
   return (
@@ -25,11 +28,7 @@ function Navbar({ setShowCart }) {
             <IoBagHandle />
             <CartBadge size="w-[20px] h-[20px] md:w-[25px] md:h-[25px]" />
           </li>
-          <li className="icon-wrapper">
-            <FaSun className="hidden dark:block" />
-            <FaMoon className="block dark:hidden" />
-          </li>
-          <li className="icon-wrapper">
+          <li className="icon-wrapper" onClick={profileToggle}>
             <RiUser3Fill />
           </li>
         </ul>

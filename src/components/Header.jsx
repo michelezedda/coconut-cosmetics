@@ -7,7 +7,7 @@ function Header() {
   return (
     <>
       <div className="bg-slate-400 flex text-white py-4">
-        <div className="container grid grid-cols-2 gap-6 justify-center items-center md:flex lg:justify-around">
+        <div className="container grid grid-cols-2 gap-2 justify-center items-center md:flex lg:justify-around sm:gap-1 text-sm md:gap-1">
           <div className="flex place-items-center">
             <span className="info-wrapper text-2xl">
               <FaShippingFast />

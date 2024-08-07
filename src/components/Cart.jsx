@@ -1,10 +1,10 @@
-import { useCartContext } from "../context/cartContext";
+import { useAppContext } from "../context/appContext";
 import { RxCross1 } from "react-icons/rx";
 import { FiTrash2 } from "react-icons/fi";
 
 function Cart({ setShowCart }) {
   const { cart, removeProduct, calculateTotal, shippingPrice } =
-    useCartContext();
+    useAppContext();
 
   return (
     <>
@@ -15,7 +15,7 @@ function Cart({ setShowCart }) {
           onClick={() => setShowCart(false)}
         />
         <h3 className="pt-6 text-lg font-medium text-gray-600 uppercase">
-          Your Cart
+          YOUR CART
         </h3>
         <div className="mt-6">
           {cart.length > 0 ? (
