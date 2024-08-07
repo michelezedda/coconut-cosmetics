@@ -2,6 +2,7 @@ import ProductCard from "./ProductCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import products from "../data/products";
+import dayCarePic from "/day.png";
 
 const DayCareSection = () => {
   const DayCareProducts = products ? [...products] : [];
@@ -20,9 +21,9 @@ const DayCareSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-2">
         <div className="col-span-1 mb-4 md:mb-0">
           <img
+            src={dayCarePic}
+            alt="day"
             className="w-full h-full object-cover hidden md:flex"
-            src="../public/day.png"
-            alt="banner"
           />
         </div>
         <div className="w-full col-span-4">
