@@ -9,11 +9,15 @@ import Newsletter from "./components/Newsletter";
 import NowTrending from "./components/NowTrending";
 import Footer from "./components/Footer";
 import { AppProvider } from "./context/appContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <AppProvider>

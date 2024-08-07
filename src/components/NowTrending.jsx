@@ -1,5 +1,6 @@
 import ProductCard from "./ProductCard";
 import products from "../data/products";
+import { Link } from "react-router-dom";
 
 function NowTrending() {
   const shuffledProducts = products
@@ -15,7 +16,9 @@ function NowTrending() {
         </h1>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {data.map((product) => (
-            <ProductCard key={product.id} {...product} />
+            <Link to={`/product/${product.id}`} key={product.id}>
+              <ProductCard {...product} />
+            </Link>
           ))}
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import products from "../data/products";
 import nightCarePic from "/night.png";
+import { Link } from "react-router-dom";
 
 const NightCareSection = () => {
   const NightCareProducts = products ? [...products] : [];
@@ -52,13 +53,14 @@ const NightCareSection = () => {
               >
                 {data.map((item) => (
                   <SplideSlide key={item.id}>
-                    <ProductCard
-                      key={item.id}
-                      img={item.img}
-                      name={item.name}
-                      price={item.price}
-                      rating={item.rating}
-                    />
+                    <Link to={`/product/${item.id}`} key={item.id}>
+                      <ProductCard
+                        img={item.img}
+                        name={item.name}
+                        price={item.price}
+                        rating={item.rating}
+                      />
+                    </Link>
                   </SplideSlide>
                 ))}
               </Splide>
