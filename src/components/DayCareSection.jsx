@@ -38,7 +38,7 @@ const DayCareSection = () => {
               type: "loop",
               breakpoints: {
                 1024: {
-                  perPage: 4,
+                  perPage: 3,
                 },
                 840: {
                   perPage: 3,
