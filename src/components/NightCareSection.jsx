@@ -1,7 +1,7 @@
 import ProductCard from "./ProductCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import products from "./data/products";
+import products from "../data/products";
 
 const NightCareSection = () => {
   const NightCareProducts = products ? [...products] : [];

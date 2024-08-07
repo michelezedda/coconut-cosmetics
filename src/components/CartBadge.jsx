@@ -1,8 +1,8 @@
 import React from "react";
-import { useCartContext } from "../context/cartContext";
+import { useAppContext } from "../context/appContext";
 
 function CartBadge() {
-  const { cart } = useCartContext();
+  const { cart } = useAppContext();
 
   return (
     <>

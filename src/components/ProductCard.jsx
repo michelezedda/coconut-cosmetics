@@ -1,9 +1,9 @@
 import { IoBagHandle } from "react-icons/io5";
 import Swal from "sweetalert2";
-import { useCartContext } from "../context/cartContext";
+import { useAppContext } from "../context/appContext";
 
 function ProductCard({ id, name, img, price, rating }) {
-  const { addToCart } = useCartContext();
+  const { addToCart } = useAppContext();
 
   const handleClick = () => {
     addToCart({ id, name, img, price, rating });
