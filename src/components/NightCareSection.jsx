@@ -46,7 +46,7 @@ const NightCareSection = () => {
                       perPage: 2,
                     },
                     640: {
-                      perPage: 1,
+                      perPage: 2,
                     },
                   },
                 }}

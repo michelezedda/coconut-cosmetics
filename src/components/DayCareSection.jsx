@@ -38,13 +38,13 @@ const DayCareSection = () => {
               type: "loop",
               breakpoints: {
                 1024: {
+                  perPage: 4,
+                },
+                840: {
                   perPage: 3,
                 },
-                768: {
-                  perPage: 2,
-                },
                 640: {
-                  perPage: 1,
+                  perPage: 2,
                 },
               },
             }}
@@ -53,6 +53,7 @@ const DayCareSection = () => {
               <SplideSlide key={item.id}>
                 <Link to={`/product/${item.id}`} key={item.id}>
                   <ProductCard
+                    key={item.id}
                     img={item.img}
                     name={item.name}
                     price={item.price}

@@ -14,7 +14,7 @@ function NowTrending() {
         <h1 className="flex text-4xl justify-center items-center mb-10">
           NOW TRENDING
         </h1>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {data.map((product) => (
             <Link to={`/product/${product.id}`} key={product.id}>
               <ProductCard {...product} />
