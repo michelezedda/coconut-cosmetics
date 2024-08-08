@@ -17,7 +17,7 @@ function Cart({ setShowCart }) {
         <h3 className="pt-6 text-lg font-medium text-gray-600 uppercase">
           YOUR CART
         </h3>
-        <div className="mt-6">
+        <div className="mt-6 max-h-[500px] overflow-y-auto pr-4">
           {cart.length > 0 ? (
             cart.map((item) => (
               <div key={item.id} className="border-b py-2">
