@@ -11,7 +11,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="*" element={<App />} />
-        <Route path="/product/:id" element={<Product />} />
       </Routes>
     </Router>
   </React.StrictMode>
