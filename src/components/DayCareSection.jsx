@@ -51,15 +51,13 @@ const DayCareSection = () => {
           >
             {data.map((item) => (
               <SplideSlide key={item.id}>
-                <Link to={`/product/${item.id}`} key={item.id}>
-                  <ProductCard
-                    key={item.id}
-                    img={item.img}
-                    name={item.name}
-                    price={item.price}
-                    rating={item.rating}
-                  />
-                </Link>
+                <ProductCard
+                  key={item.id}
+                  img={item.img}
+                  name={item.name}
+                  price={item.price}
+                  rating={item.rating}
+                />
               </SplideSlide>
             ))}
           </Splide>

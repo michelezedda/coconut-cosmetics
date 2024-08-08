@@ -16,9 +16,7 @@ function NowTrending() {
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {data.map((product) => (
-            <Link to={`/product/${product.id}`} key={product.id}>
-              <ProductCard {...product} />
-            </Link>
+            <ProductCard {...product} />
           ))}
         </div>
       </div>

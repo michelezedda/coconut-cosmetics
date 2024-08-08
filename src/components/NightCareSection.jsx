@@ -53,14 +53,12 @@ const NightCareSection = () => {
               >
                 {data.map((item) => (
                   <SplideSlide key={item.id}>
-                    <Link to={`/product/${item.id}`} key={item.id}>
-                      <ProductCard
-                        img={item.img}
-                        name={item.name}
-                        price={item.price}
-                        rating={item.rating}
-                      />
-                    </Link>
+                    <ProductCard
+                      img={item.img}
+                      name={item.name}
+                      price={item.price}
+                      rating={item.rating}
+                    />
                   </SplideSlide>
                 ))}
               </Splide>
