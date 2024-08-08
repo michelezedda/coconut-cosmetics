@@ -25,6 +25,7 @@ const products = [
     price: 22.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "dayCare",
+    points: 4,
   },
   {
     id: 1,
@@ -33,6 +34,7 @@ const products = [
     price: 14.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "both",
+    points: 2,
   },
   {
     id: 2,
@@ -41,6 +43,7 @@ const products = [
     price: 29.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "dayCare",
+    points: 4,
   },
   {
     id: 3,
@@ -49,6 +52,7 @@ const products = [
     price: 24.99,
     rating: "⭐⭐⭐⭐",
     label: "dayCare",
+    points: 4,
   },
   {
     id: 4,
@@ -57,6 +61,7 @@ const products = [
     price: 14.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "dayCare",
+    points: 2,
   },
   {
     id: 5,
@@ -65,6 +70,7 @@ const products = [
     price: 6.99,
     rating: "⭐⭐⭐⭐",
     label: "both",
+    points: 1,
   },
   {
     id: 6,
@@ -73,6 +79,7 @@ const products = [
     price: 24.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "nightCare",
+    points: 4,
   },
   {
     id: 7,
@@ -81,6 +88,7 @@ const products = [
     price: 24.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "nightCare",
+    points: 4,
   },
   {
     id: 8,
@@ -89,6 +97,7 @@ const products = [
     price: 12.99,
     rating: "⭐⭐⭐⭐",
     label: "both",
+    points: 2,
   },
   {
     id: 9,
@@ -97,6 +106,7 @@ const products = [
     price: 22.99,
     rating: "⭐⭐⭐⭐",
     label: "nightCare",
+    points: 4,
   },
   {
     id: 10,
@@ -105,6 +115,7 @@ const products = [
     price: 12.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "nightCare",
+    points: 2,
   },
   {
     id: 11,
@@ -113,6 +124,7 @@ const products = [
     price: 24.99,
     rating: "⭐⭐⭐⭐",
     label: "nightCare",
+    points: 4,
   },
   {
     id: 12,
@@ -121,6 +133,7 @@ const products = [
     price: 9.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "both",
+    points: 1,
   },
   {
     id: 13,
@@ -129,6 +142,7 @@ const products = [
     price: 22.99,
     rating: "⭐⭐⭐⭐",
     label: "dayCare",
+    points: 4,
   },
   {
     id: 14,
@@ -137,6 +151,7 @@ const products = [
     price: 14.99,
     rating: "⭐⭐⭐⭐",
     label: "dayCare",
+    points: 2,
   },
   {
     id: 15,
@@ -145,6 +160,7 @@ const products = [
     price: 4.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "both",
+    points: 1,
   },
   {
     id: 16,
@@ -153,6 +169,7 @@ const products = [
     price: 14.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "both",
+    points: 1,
   },
   {
     id: 17,
@@ -161,6 +178,7 @@ const products = [
     price: 28.99,
     rating: "⭐⭐⭐⭐",
     label: "dayCare",
+    points: 4,
   },
   {
     id: 18,
@@ -169,6 +187,7 @@ const products = [
     price: 27.99,
     rating: "⭐⭐⭐⭐⭐",
     label: "nightCare",
+    points: 4,
   },
 ];
 

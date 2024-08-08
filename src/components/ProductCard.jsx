@@ -2,11 +2,11 @@ import { IoBagHandle } from "react-icons/io5";
 import Swal from "sweetalert2";
 import { useAppContext } from "../context/appContext";
 
-function ProductCard({ id, name, img, price, rating }) {
+function ProductCard({ id, name, img, price, rating, points }) {
   const { addToCart } = useAppContext();
 
   const handleClick = () => {
-    addToCart({ id, name, img, price, rating });
+    addToCart({ id, name, img, price, rating, points });
     Swal.fire({
       position: "center",
       icon: "success",
@@ -21,6 +21,7 @@ function ProductCard({ id, name, img, price, rating }) {
       <img src={img} alt={name} className="rounded-t-lg" />
       <div className="space-y-2 relative p-4">
         <div className="flex gap-[2px] text-[15px]">{rating}</div>
+        <div className="flex gap-[2px] text-[15px]">{points} 🥥 point/s</div>
         <h3 className="font-medium">{name}</h3>
         <h3 className="text-2xl font-medium text-red-600">$ {price}</h3>
         <button

@@ -1,6 +1,5 @@
 import ProductCard from "./ProductCard";
 import products from "../data/products";
-import { Link } from "react-router-dom";
 
 function NowTrending() {
   const shuffledProducts = products

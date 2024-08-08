@@ -3,7 +3,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import products from "../data/products";
 import dayCarePic from "/day.png";
-import { Link } from "react-router-dom";
 
 const DayCareSection = () => {
   const DayCareProducts = products ? [...products] : [];
@@ -57,6 +56,7 @@ const DayCareSection = () => {
                   name={item.name}
                   price={item.price}
                   rating={item.rating}
+                  points={item.points}
                 />
               </SplideSlide>
             ))}

@@ -20,7 +20,7 @@ function Footer() {
               <li>Terms and Conditions</li>
               <li>Privacy Policy</li>
               <li>Cookie Policy</li>
-              <li>Cookie Preferences</li>
+              <li>cocoPoints Policy</li>
               <li>Career Opportunities</li>
             </ul>
             <ul>
