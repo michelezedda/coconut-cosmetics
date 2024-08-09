@@ -48,7 +48,7 @@ function Cart({ setShowCart }) {
                 </div>
                 <div className="flex items-center">
                   <FiTrash2
-                    className="text-lg cursor-pointer mr-4 text-red-600"
+                    className="text-lg cursor-pointer mr-4 hover:text-red-600"
                     onClick={() => removeProduct(item.id)}
                     aria-label={`Remove ${item.name} from cart`}
                   />

@@ -17,6 +17,8 @@ export const AppProvider = ({ children }) => {
   const [showProfile, setShowProfile] = useState(false);
   const [shippingPrice, setShippingPrice] = useState(0);
 
+  const cartQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+
   useEffect(() => {
     calculateShippingPrice();
   }, [cart]);
@@ -88,6 +90,7 @@ export const AppProvider = ({ children }) => {
         showProfile,
         setShowProfile,
         totalPoints,
+        cartQuantity,
       }}
     >
       {children}

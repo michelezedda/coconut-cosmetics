@@ -50,14 +50,7 @@ const DayCareSection = () => {
           >
             {data.map((item) => (
               <SplideSlide key={item.id}>
-                <ProductCard
-                  key={item.id}
-                  img={item.img}
-                  name={item.name}
-                  price={item.price}
-                  rating={item.rating}
-                  points={item.points}
-                />
+                <ProductCard {...item} />
               </SplideSlide>
             ))}
           </Splide>

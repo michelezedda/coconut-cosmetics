@@ -52,13 +52,7 @@ const NightCareSection = () => {
               >
                 {data.map((item) => (
                   <SplideSlide key={item.id}>
-                    <ProductCard
-                      img={item.img}
-                      name={item.name}
-                      price={item.price}
-                      rating={item.rating}
-                      points={item.points}
-                    />
+                    <ProductCard {...item} />
                   </SplideSlide>
                 ))}
               </Splide>
