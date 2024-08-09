@@ -10,36 +10,62 @@ function Footer() {
         <div className="container">
           <div className="flex justify-between p-6 leading-8">
             <ul>
-              <li>About Us</li>
-              <li>Payments Method</li>
-              <li>Shipping</li>
-              <li>Returns</li>
-              <li>Contact Us</li>
+              <li className="hover:text-sky-600 cursor-pointer">About Us</li>
+              <li className="hover:text-sky-600 cursor-pointer">
+                Payments Method
+              </li>
+              <li className="hover:text-sky-600 cursor-pointer">Shipping</li>
+              <li className="hover:text-sky-600 cursor-pointer">Returns</li>
+              <li className="hover:text-sky-600 cursor-pointer">Contact Us</li>
             </ul>
             <ul>
-              <li>Terms and Conditions</li>
-              <li>Privacy Policy</li>
-              <li>Cookie Policy</li>
-              <li>cocoPoints Policy</li>
-              <li>Career Opportunities</li>
+              <li className="hover:text-sky-600 cursor-pointer">
+                Terms and Conditions
+              </li>
+              <li className="hover:text-sky-600 cursor-pointer">
+                Privacy Policy
+              </li>
+              <li className="hover:text-sky-600 cursor-pointer">
+                Cookie Policy
+              </li>
+              <li className="hover:text-sky-600 cursor-pointer">
+                cocoPoints Policy
+              </li>
+              <li className="hover:text-sky-600 cursor-pointer">
+                Career Opportunities
+              </li>
             </ul>
             <ul>
-              <li>Sign Up</li>
-              <li>Sing In</li>
-              <li>My Account</li>
-              <li>Wishlist</li>
-              <li>Order Tracking</li>
+              <li className="hover:text-sky-600 cursor-pointer">Sign Up</li>
+              <li className="hover:text-sky-600 cursor-pointer">Sing In</li>
+              <li className="hover:text-sky-600 cursor-pointer">My Account</li>
+              <li className="hover:text-sky-600 cursor-pointer">Wishlist</li>
+              <li className="hover:text-sky-600 cursor-pointer">
+                Order Tracking
+              </li>
             </ul>
           </div>
           <div className="flex flex-col justify-center items-center gap-2 mt-4">
             <div className="flex gap-4 text-2xl">
-              <a href="https://www.facebook.com/" target="_blank">
+              <a
+                className="hover:text-sky-600"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
                 <FaFacebookSquare />
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
+              <a
+                className="hover:text-sky-600"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
                 <FaInstagram />
               </a>
-              <a href="https://www.x.com/" target="_blank">
+              <a
+                className="hover:text-sky-600"
+                href="https://www.x.com/"
+                target="_blank"
+              >
                 <FaXTwitter />
               </a>
             </div>

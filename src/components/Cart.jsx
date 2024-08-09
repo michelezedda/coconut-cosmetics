@@ -1,6 +1,7 @@
 import { useAppContext } from "../context/appContext";
 import { RxCross1 } from "react-icons/rx";
 import { FiTrash2 } from "react-icons/fi";
+import toast from "react-hot-toast";
 
 function Cart({ setShowCart }) {
   const { cart, removeProduct, calculateTotal, shippingPrice, totalPoints } =
@@ -80,7 +81,9 @@ function Cart({ setShowCart }) {
         </div>
         <button
           className="bg-slate-600 text-white text-center w-full rounded-3xl py-2 hover:bg-slate-700 active:scale-95 mt-4"
-          onClick={() => alert("Proceeding to checkout")}
+          onClick={() =>
+            toast.error("This is just a demo; you cannot proceed.")
+          }
           aria-label="Proceed to checkout"
         >
           CHECKOUT

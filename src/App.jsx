@@ -10,6 +10,7 @@ import NowTrending from "./components/NowTrending";
 import Footer from "./components/Footer";
 import { AppProvider } from "./context/appContext";
 import { useState, useEffect } from "react";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -25,6 +26,7 @@ function App() {
         <meta charSet="utf-8" />
         <title>coconut. cosmetics</title>
       </Helmet>
+      <Toaster />
       <Navbar setShowCart={setShowCart} setShowProfile={setShowProfile} />
       {showProfile && <Profile setShowProfile={setShowProfile} />}
       {showCart && <Cart setShowCart={setShowCart} />}

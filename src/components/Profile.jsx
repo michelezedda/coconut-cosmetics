@@ -1,4 +1,5 @@
 import { RxCross1 } from "react-icons/rx";
+import { toast } from "react-hot-toast";
 
 function Profile({ setShowProfile }) {
   return (
@@ -11,10 +12,20 @@ function Profile({ setShowProfile }) {
         />
         <h3 className="pt-6 text-lg font-medium text-gray-600">YOUR PROFILE</h3>
         <div className="mt-4 mb-4">You are not logged in</div>
-        <button className="bg-slate-600 text-white text-center w-full rounded-3xl py-2 hover:bg-sky-700 active:scale-95 mt-4">
+        <button
+          onClick={() =>
+            toast.error("This is just a demo; you cannot proceed.")
+          }
+          className="bg-slate-600 text-white text-center w-full rounded-3xl py-2 hover:bg-slate-700  active:scale-95 mt-4"
+        >
           SING UP
         </button>
-        <button className="bg-slate-600 text-white text-center w-full rounded-3xl py-2 hover:bg-green-700 active:scale-95 mt-4">
+        <button
+          onClick={() =>
+            toast.error("This is just a demo; you cannot proceed.")
+          }
+          className="bg-slate-600 text-white text-center w-full rounded-3xl py-2 hover:bg-slate-700 active:scale-95 mt-4"
+        >
           SING IN
         </button>
       </div>
