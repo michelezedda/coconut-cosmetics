@@ -18,7 +18,7 @@ function Profile({ setShowProfile }) {
           }
           className="bg-slate-600 text-white text-center w-full rounded-3xl py-2 hover:bg-slate-700  active:scale-95 mt-4"
         >
-          SING UP
+          SIGN UP
         </button>
         <button
           onClick={() =>
@@ -26,7 +26,7 @@ function Profile({ setShowProfile }) {
           }
           className="bg-slate-600 text-white text-center w-full rounded-3xl py-2 hover:bg-slate-700 active:scale-95 mt-4"
         >
-          SING IN
+          SIGN IN
         </button>
       </div>
     </>
