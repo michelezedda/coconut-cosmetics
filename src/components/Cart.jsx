@@ -43,7 +43,7 @@ function Cart({ setShowCart }) {
                       Quantity: {item.quantity}
                     </span>
                     <span className="text-sm text-gray-500">
-                      "{item.points * item.quantity} 🥥 points"
+                      {item.points * item.quantity} 🥥 points
                     </span>
                   </div>
                 </div>
