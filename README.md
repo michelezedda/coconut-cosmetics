@@ -18,6 +18,8 @@
 - **Git**: Version control system for tracking changes and collaborating.
 - **React**: JavaScript library for dynamic user interfaces.
 - **Vite**: Front-end dev tool improving developer experience.
+- **SweetAlert2**: A library for creating beautiful, customizable, and responsive alert boxes.
+- **react-hot-toast**: A React library for displaying customizable, non-blocking notifications.
 
 ## Project Link
 Explore coconut. cosmetics: :link: [coconut. cosmetics](https://coconut-cosmetics.vercel.app/)
