@@ -35,7 +35,7 @@ export const AppProvider = ({ children }) => {
               : item
           );
         } else {
-          return [...prevCart, { ...product, quantity: 1 }]; // Fixed undefined 'item'
+          return [...prevCart, { ...product, quantity: 1 }];
         }
       });
     },
