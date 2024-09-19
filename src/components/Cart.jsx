@@ -4,8 +4,14 @@ import { FiTrash2 } from "react-icons/fi";
 import toast from "react-hot-toast";
 
 function Cart({ setShowCart }) {
-  const { cart, removeProduct, calculateTotal, shippingPrice, totalPoints } =
-    useAppContext();
+  const {
+    cart,
+    removeProduct,
+    calculateTotal,
+    shippingPrice,
+    totalPoints,
+    cocoPoints,
+  } = useAppContext();
 
   return (
     <>
@@ -43,7 +49,8 @@ function Cart({ setShowCart }) {
                       Quantity: {item.quantity}
                     </span>
                     <span className="text-sm text-gray-500">
-                      {item.points * item.quantity} 🥥 points
+                      {item.points * item.quantity} 🥥
+                      {item.points * item.quantity > 1 ? `points` : `point`}
                     </span>
                   </div>
                 </div>

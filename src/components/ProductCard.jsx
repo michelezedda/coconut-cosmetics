@@ -2,7 +2,7 @@ import { IoBagHandle } from "react-icons/io5";
 import Swal from "sweetalert2";
 import { useAppContext } from "../context/appContext";
 
-function ProductCard({ id, name, img, price, rating, points }) {
+function ProductCard({ id, name, img, price, rating, points, cocoPoints }) {
   const { addToCart } = useAppContext();
 
   const handleClick = () => {
@@ -21,7 +21,9 @@ function ProductCard({ id, name, img, price, rating, points }) {
       <img src={img} alt={name} className="rounded-t-lg" />
       <div className="space-y-2 relative p-4">
         <div className="flex gap-[2px] text-[15px]">{rating}</div>
-        <div className="flex gap-[2px] text-[15px]">{points} 🥥 point/s</div>
+        <div className="flex gap-[2px] text-[15px]">
+          {points} 🥥 {points > 1 ? "points" : "point"}
+        </div>
         <h3 className="font-medium">{name}</h3>
         <h3 className="text-2xl font-medium text-red-600">$ {price}</h3>
         <button
