@@ -7,10 +7,8 @@
 <h2 align="center">coconut. cosmetics: your path to radiant, healthy skin</h2>
 
 ## Key Features
-- **Navbar:**
-- **Cart:** 
-- **Product Page:** Detailed information including ...
-
+- **Navbar:** A responsive navigation bar for easy access to cart and account management.
+- **Cart:** A fully functional shopping cart with the ability to add, remove, and update items in real-time.
 
 ## Technologies Used
 - **HTML5 & CSS3**: Markup and styling languages for web development.
