@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://coconut-cosmetics.vercel.app/logo.png" alt="coconut cosmetics logo" width="300">
+  <img src="https://i.ibb.co/YF6FBF6L/coconut-project.png" alt="Ian Wasserman Logo" width="1000">
   <br>
 </h1>
 
