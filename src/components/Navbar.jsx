@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ShoppingBag, UserRound, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import CartBadge from "./CartBadge";
 
 function Navbar() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -19,7 +20,6 @@ function Navbar() {
   return (
     <>
       <div className="flex fixed w-full items-center justify-center bg-white z-10">
-        Link
         <Link to="/">
           <img
             src="/media/logo.png"
@@ -38,6 +38,7 @@ function Navbar() {
               <ShoppingBag color="black" size={25} />
             )}
           </div>
+          <CartBadge />
           <div
             className="rounded-full border-2 border-black p-2 cursor-pointer active:scale-98"
             onClick={profileToggle}
