@@ -11,8 +11,10 @@ function Home() {
     <>
       <Navbar />
       <Hero />
-      <DayCare />
-      <NightCare />
+      <div className="container mx-auto">
+        <DayCare />
+        <NightCare />
+      </div>
       <Newsletter />
       <Footer />
     </>

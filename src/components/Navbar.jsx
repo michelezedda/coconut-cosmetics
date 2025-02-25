@@ -27,15 +27,15 @@ function Navbar() {
             className="w-50 cursor-pointer"
           />
         </Link>
-        <div className="flex absolute right-10 gap-3">
+        <div className="flex absolute right-5 gap-3">
           <div
             className="rounded-full border-2 border-black p-2 cursor-pointer active:scale-98"
             onClick={cartToggle}
           >
             {isCartOpen ? (
-              <X color="black" size={25} />
+              <X color="black" size={22} />
             ) : (
-              <ShoppingBag color="black" size={25} />
+              <ShoppingBag color="black" size={22} />
             )}
           </div>
           <CartBadge />
@@ -44,15 +44,15 @@ function Navbar() {
             onClick={profileToggle}
           >
             {isProfileOpen ? (
-              <X color="black" size={25} />
+              <X color="black" size={22} />
             ) : (
-              <UserRound color="black" size={25} />
+              <UserRound color="black" size={22} />
             )}
           </div>
         </div>
         {/* Profile */}
         {isProfileOpen ? (
-          <div className="absolute top-15 right-0 w-1/3 bg-white rounded-bl-xl text-black p-4">
+          <div className="absolute top-15 right-0 w-[85%] bg-white rounded-bl-xl text-black p-4">
             <h4 className="text-gray-600 font-semibold text-lg my-4">
               YOUR PROFILE
             </h4>
@@ -60,14 +60,14 @@ function Navbar() {
               You are not logged in.
             </p>
             <div className="flex flex-col gap-2">
-              <button>LOG IN</button>
-              <button>SIGN UP</button>
+              <button className="myButton">LOG IN</button>
+              <button className="myButton">SIGN UP</button>
             </div>
           </div>
         ) : null}
         {/* Cart */}
         {isCartOpen ? (
-          <div className="absolute top-15 right-0 w-1/3 bg-white rounded-bl-xl text-black p-4">
+          <div className="absolute top-15 right-0 w-[85%] bg-white rounded-bl-xl text-black p-4">
             <h4 className="text-gray-600 font-semibold text-lg my-4">
               YOUR CART
             </h4>
@@ -83,11 +83,11 @@ function Navbar() {
               <span>Shipping:</span>
               <span>$ 0</span>
             </div>
-            <div className="flex justify-between font-semibold text-red-800">
+            <div className="flex justify-between font-semibold text-red-700">
               <span>Total:</span>
               <span>$ 0</span>
             </div>
-            <button className="mt-4 w-full">CHECKOUT</button>
+            <button className="myButton mt-4 w-full">CHECKOUT</button>
           </div>
         ) : null}
       </div>

@@ -7,6 +7,7 @@ function NightCare() {
       ? { ...products }
       : null
   );
+
   return (
     <>
       <div className="flex flex-col justify-center items-center pt-22">
