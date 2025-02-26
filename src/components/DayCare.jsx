@@ -1,25 +1,37 @@
 import ProductCard from "./ProductCard";
 import products from "../data/products";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 
 function DayCare() {
-  const dayCareProducts = products.filter((product) =>
-    product.label === "dayCare" || product.label === "both"
-      ? [...products]
-      : null
+  const dayCareProducts = products.filter(
+    (product) => product.label === "dayCare" || product.label === "both"
   );
-
   return (
     <>
-      <div className="flex flex-col justify-center items-center pt-22">
-        <h2 className="text-2xl font-semibold">DAY CARE</h2>
-        <h4 className="text-lg mt-2">Brighten and protect daily</h4>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mt-4">
-          {dayCareProducts.map((product) => (
-            <div key={product.id}>
-              <ProductCard {...product} />
-            </div>
-          ))}
+      <div className="flex flex-col md:flex-row justify-between items-center mb-6 pt-22 ">
+        <div className="text-center md:text-left md:ml-2">
+          <h2 className="text-2xl font-semibold">DAY CARE</h2>
+          <p className="text-lg mt-2">Brighten and protect daily</p>
         </div>
+      </div>
+      <div className="w-full mt-4">
+        <Splide
+          options={{
+            perMove: 1,
+            gap: "1px",
+            pagination: false,
+            arrows: true,
+            type: "loop",
+            fixedWidth: "198px",
+          }}
+        >
+          {dayCareProducts.map((product) => (
+            <SplideSlide key={product.id}>
+              <ProductCard {...product} />
+            </SplideSlide>
+          ))}
+        </Splide>
       </div>
     </>
   );
