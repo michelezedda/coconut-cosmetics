@@ -17,9 +17,9 @@ function Newsletter() {
   return (
     <>
       <div className="flex flex-col justify-center items-center p-4 mt-20 text-black  bg-gray-300">
-        <span className="font-semibold">
+        <p className="font-semibold">
           Get 10% off your first order signing up to our newsletter!
-        </span>
+        </p>
         <div className="relative">
           <form onSubmit={formik.handleSubmit} className="mt-4">
             <input
@@ -37,11 +37,11 @@ function Newsletter() {
             >
               <Send color="black" size={25} />
             </button>
-            <div className="text-center">
-              <input type="checkbox" required className="mt-4" />
-              <span className="text-[14px] ml-1">
+            <div className="flex items-center justify-center mt-2">
+              <input type="checkbox" required />
+              <p className="text-[14px] ml-1">
                 By submitting this form, you agree to the privacy policy*
-              </span>
+              </p>
             </div>
           </form>
         </div>

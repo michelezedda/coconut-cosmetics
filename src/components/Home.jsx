@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Hero from "./Hero";
 import DayCare from "./DayCare";
 import NightCare from "./NightCare";
 import Newsletter from "./Newsletter";
@@ -10,7 +9,6 @@ function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
       <div className="container mx-auto px-4 max-w-screen-lg">
         <DayCare />
         <NightCare />

@@ -60,10 +60,10 @@ function Footer() {
               className="hover:opacity-55 cursor-pointer"
             />
           </span>
-          <span>
+          <p>
             Copyright {new Date().getFullYear()} coconut. cosmetics - All rights
             reserved
-          </span>
+          </p>
         </div>
       </div>
     </>

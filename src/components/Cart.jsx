@@ -1,0 +1,59 @@
+import { useAppContext } from "../context/AppContext";
+
+function Cart() {
+  const { cartItems } = useAppContext();
+
+  return (
+    <>
+      <div className="absolute top-14 right-0 w-[85%] md:w-[60%] 2xl:w-[25%] bg-white rounded-bl-xl text-black p-4">
+        <h4 className="text-gray-600 font-semibold text-lg mt-4 mb-8">
+          YOUR CART
+        </h4>
+        {cartItems.length > 0 ? (
+          cartItems.map((item) => (
+            <div key={item.id} className="mt-2">
+              <div className="flex justify-between">
+                <div className="flex">
+                  <div className="w-15 h-15">
+                    <img src={item.img} alt={item.name} />
+                  </div>
+                  <div className="ml-4">
+                    <p className="font-semibold text-sm">{item.name}</p>
+                    <div className="rounded-full border px-1 border-gray-500">
+                      <p className="text-sm text-gray-500">Quantity: - 1 +</p>
+                    </div>
+                    <p className="text-sm  text-gray-500">
+                      {item.points} 🥥points
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center">
+                  <p className="font-semibold">$ {item.price}</p>
+                </div>
+              </div>
+              <hr className="text-gray-200 mt-2" />
+            </div>
+          ))
+        ) : (
+          <p className="text-gray-600 text-center mb-4">Your cart is empty.</p>
+        )}
+        {/* {points > 0 && <p>Total cocopoints: {points} 🥥</p>} */}
+        <div className="flex justify-between mt-6 font-semibold">
+          <p>Subtotal:</p>
+          <p>$ 0</p>
+        </div>
+        <div className="flex justify-between">
+          <p>Shipping:</p>
+          <p>$ 0</p>
+        </div>
+        <div className="flex justify-between font-semibold text-red-700">
+          <p>Total:</p>
+          <p>$ 0</p>
+        </div>
+        <button className="myButton mt-4 w-full">CHECKOUT</button>
+      </div>
+    </>
+  );
+}
+
+export default Cart;
