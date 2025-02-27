@@ -1,10 +1,16 @@
-import React from "react";
+import { useAppContext } from "../context/AppContext";
 
 const CartBadge = () => {
+  const { cart, cartQuantity } = useAppContext();
+
   return (
-    <div className="absolute left-7 px-2 bg-red-600 rounded-full text-white">
-      0
-    </div>
+    <>
+      {cart.length > 0 ? (
+        <div className="absolute left-7 w-[25px] h-[25px] bg-red-600 rounded-full text-white text-center">
+          {cartQuantity}
+        </div>
+      ) : null}
+    </>
   );
 };
 
