@@ -1,8 +1,14 @@
 import { useAppContext } from "../context/AppContext";
 
 function Cart() {
-  const { cart, removeFromCart, totalPoints, totalPrice, shippingFee } =
-    useAppContext();
+  const {
+    cart,
+    increaseQuantity,
+    removeFromCart,
+    totalPoints,
+    totalPrice,
+    shippingFee,
+  } = useAppContext();
 
   return (
     <>
@@ -35,7 +41,7 @@ function Cart() {
                         <span
                           className="cursor-pointer mx-1"
                           onClick={() => {
-                            console.log("add one");
+                            increaseQuantity(item.id);
                           }}
                         >
                           +

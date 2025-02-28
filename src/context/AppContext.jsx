@@ -10,18 +10,31 @@ export function AppProvider({ children }) {
   // Function to add a product to the cart
   const addToCart = (newItem) => {
     setCart((prevCart) => {
-      let found = false;
+      let itemFound = false;
 
       const updatedCart = prevCart.map((item) => {
         if (item.id === newItem.id) {
-          found = true;
+          itemFound = true;
           return { ...item, quantity: item.quantity + 1 };
         }
         return item;
       });
 
-      return found ? updatedCart : [...prevCart, { ...newItem, quantity: 1 }];
+      return itemFound
+        ? updatedCart
+        : [...prevCart, { ...newItem, quantity: 1 }];
     });
+  };
+
+  // Function to increase item quantity
+  const increaseQuantity = (id) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === id
+          ? { ...item, quantity: item.quantity + 1 }
+          : console.log("failed")
+      )
+    );
   };
 
   // Function to remove a product from the cart
@@ -56,6 +69,7 @@ export function AppProvider({ children }) {
         cart,
         cartQuantity,
         addToCart,
+        increaseQuantity,
         removeFromCart,
         totalPoints,
         totalPrice,
