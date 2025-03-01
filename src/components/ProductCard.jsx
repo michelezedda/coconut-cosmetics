@@ -18,7 +18,7 @@ function ProductCard({ id, name, img, price, rating, points, available }) {
       <div className="relative bg-white rounded-lg border border-gray-300 mx-2 hover:bg-gray-50">
         <img src={img} alt={name} className="rounded-t-lg" />
         <div className="flex flex-col p-4">
-          <p>{rating}</p>
+          <p className="text-sm">{rating}</p>
           <p className="text-sm">{points} 🥥 points</p>
           <p className="font-semibold text-md">{name}</p>
           <p className="font-semibold text-red-600 text-xl">$ {price}</p>
@@ -34,13 +34,13 @@ function ProductCard({ id, name, img, price, rating, points, available }) {
         </div>
         {available ? (
           <button
-            className="absolute top-44 right-1 rounded-full bg-slate-600 p-3 cursor-pointer active:scale-98 hover:bg-teal-700"
+            className="absolute top-43 right-2 rounded-full bg-slate-600 p-3 cursor-pointer active:scale-98 hover:bg-teal-700"
             onClick={handleClick}
           >
             <ShoppingBag color="white" size={25} />
           </button>
         ) : (
-          <button className="absolute top-43 right-1 rounded-full p-3 bg-red-700">
+          <button className="absolute top-43 right-2 rounded-full p-3 bg-red-700">
             <ShoppingBag color="white" size={25} />
           </button>
         )}
