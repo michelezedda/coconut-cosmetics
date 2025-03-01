@@ -51,5 +51,4 @@ body {
 }
 .animate-ticker {
   animation: ticker 20s linear infinite;
-  width: max-content;
 }
