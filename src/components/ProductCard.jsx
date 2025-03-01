@@ -20,8 +20,10 @@ function ProductCard({ id, name, img, price, rating, points, available }) {
         <div className="flex flex-col p-4">
           <p className="text-sm">{rating}</p>
           <p className="text-sm">{points} 🥥 points</p>
-          <p className="font-semibold text-md">{name}</p>
-          <p className="font-semibold text-red-600 text-xl">$ {price}</p>
+          <p className="font-semibold text-sm sm:text-md">{name}</p>
+          <p className="font-semibold text-red-600 text-lg sm:text-xl">
+            $ {price}
+          </p>
           {available ? (
             <p className="flex items-center gap-1 text-gray-700">
               <CircleCheck color="green" size={15} /> Available
