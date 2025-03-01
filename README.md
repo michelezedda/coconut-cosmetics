@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://i.ibb.co/YF6FBF6L/coconut-project.png" alt="coconut. cosmetics" width="1100">
+  <img src="https://i.ibb.co/WvX8qp2x/coconut-project.png" alt="coconut. cosmetics" width="1100">
   <br>
 </h1>
 
@@ -16,8 +16,9 @@
 - **Git**: Version control system for tracking changes and collaborating.
 - **React**: JavaScript library for dynamic user interfaces.
 - **Vite**: Front-end dev tool improving developer experience.
-- **SweetAlert2**: A library for creating beautiful, customizable, and responsive alert boxes.
-- **react-hot-toast**: A React library for displaying customizable, non-blocking notifications.
+- **react-hot-toast**: A React library for displaying customizable notifications.
+- **Splide**: A JavaScript library for creating responsive and accessible arousels.
+- **Lucide**: An icon library for react applications.
 
 ## Project Link
 Explore coconut. cosmetics: :link: [coconut. cosmetics](https://coconut-cosmetics.vercel.app/)
