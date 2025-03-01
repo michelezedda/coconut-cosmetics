@@ -39,7 +39,7 @@ function Newsletter() {
             </button>
             <div className="flex items-center justify-center mt-2">
               <input type="checkbox" required />
-              <p className="text-[14px] ml-1">
+              <p className="text-[14px] ml-1 text-center">
                 By submitting this form, you agree to the privacy policy*
               </p>
             </div>
