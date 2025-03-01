@@ -1,8 +1,23 @@
-# React + Vite
+<h1 align="center">
+  <br>
+  <img src="https://i.ibb.co/YF6FBF6L/coconut-project.png" alt="coconut. cosmetics" width="1100">
+  <br>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2 align="center">coconut. cosmetics: your path to radiant, healthy skin</h2>
 
-Currently, two official plugins are available:
+## Key Features
+- **Navbar:** A responsive navigation bar for easy access to cart and account management.
+- **Cart:** A fully functional shopping cart with the ability to add, remove, and update items in real-time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **HTML5 & CSS3**: Markup and styling languages for web development.
+- **Tailwind CSS**: CSS extension language for more efficient styling.
+- **Git**: Version control system for tracking changes and collaborating.
+- **React**: JavaScript library for dynamic user interfaces.
+- **Vite**: Front-end dev tool improving developer experience.
+- **SweetAlert2**: A library for creating beautiful, customizable, and responsive alert boxes.
+- **react-hot-toast**: A React library for displaying customizable, non-blocking notifications.
+
+## Project Link
+Explore coconut. cosmetics: :link: [coconut. cosmetics](https://coconut-cosmetics.vercel.app/)
