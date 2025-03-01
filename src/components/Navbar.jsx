@@ -29,7 +29,7 @@ function Navbar() {
             className="w-46 cursor-pointer"
           />
         </Link>
-        <div className="flex absolute right-7 gap-3 lg:mr-10">
+        <div className="flex absolute right-2 gap-3 lg:mr-10">
           <div
             className="rounded-full border-2 border-black p-2 cursor-pointer active:scale-98"
             onClick={cartToggle}

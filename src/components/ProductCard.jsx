@@ -34,7 +34,7 @@ function ProductCard({ id, name, img, price, rating, points, available }) {
         </div>
         {available ? (
           <button
-            className="absolute top-43 right-1 rounded-full bg-slate-600 p-3 cursor-pointer active:scale-98 hover:bg-teal-700"
+            className="absolute top-44 right-1 rounded-full bg-slate-600 p-3 cursor-pointer active:scale-98 hover:bg-teal-700"
             onClick={handleClick}
           >
             <ShoppingBag color="white" size={25} />
