@@ -17,7 +17,7 @@ function Newsletter() {
   return (
     <>
       <div className="flex flex-col justify-center items-center p-4 mt-20 text-black  bg-gray-300">
-        <p className="font-semibold">
+        <p className="font-semibold text-center">
           Get 10% off your first order signing up to our newsletter!
         </p>
         <div className="relative">
@@ -37,9 +37,9 @@ function Newsletter() {
             >
               <Send color="black" size={25} />
             </button>
-            <div className="flex items-center justify-center mt-2">
+            <div className="flex justify-center items-center mt-2">
               <input type="checkbox" required />
-              <p className="text-[14px] ml-1 text-center">
+              <p className="text-[14px] ml-1">
                 By submitting this form, you agree to the privacy policy*
               </p>
             </div>
