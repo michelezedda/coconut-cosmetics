@@ -42,7 +42,7 @@ function ProductCard({ id, name, img, price, rating, points, available }) {
             <ShoppingBag color="white" size={25} />
           </button>
         ) : (
-          <button className="absolute top-43 right-2 rounded-full p-3 bg-red-700">
+          <button className="absolute top-43 right-2 rounded-full p-3 bg-gray-300">
             <ShoppingBag color="white" size={25} />
           </button>
         )}
