@@ -26,6 +26,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "dayCare",
     points: 400,
+    available: true,
   },
   {
     id: 1,
@@ -35,6 +36,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "both",
     points: 200,
+    available: true,
   },
   {
     id: 2,
@@ -44,6 +46,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "dayCare",
     points: 400,
+    available: true,
   },
   {
     id: 3,
@@ -53,6 +56,7 @@ const products = [
     rating: "⭐⭐⭐⭐",
     label: "dayCare",
     points: 400,
+    available: true,
   },
   {
     id: 4,
@@ -62,6 +66,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "dayCare",
     points: 200,
+    available: true,
   },
   {
     id: 5,
@@ -71,6 +76,7 @@ const products = [
     rating: "⭐⭐⭐⭐",
     label: "both",
     points: 100,
+    available: true,
   },
   {
     id: 6,
@@ -80,6 +86,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "nightCare",
     points: 400,
+    available: false,
   },
   {
     id: 7,
@@ -89,6 +96,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "nightCare",
     points: 400,
+    available: true,
   },
   {
     id: 8,
@@ -98,6 +106,7 @@ const products = [
     rating: "⭐⭐⭐⭐",
     label: "nightCare",
     points: 200,
+    available: true,
   },
   {
     id: 9,
@@ -107,6 +116,7 @@ const products = [
     rating: "⭐⭐⭐⭐",
     label: "nightCare",
     points: 400,
+    available: true,
   },
   {
     id: 10,
@@ -116,6 +126,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "nightCare",
     points: 200,
+    available: true,
   },
   {
     id: 11,
@@ -125,6 +136,7 @@ const products = [
     rating: "⭐⭐⭐⭐",
     label: "nightCare",
     points: 400,
+    available: true,
   },
   {
     id: 12,
@@ -134,6 +146,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "both",
     points: 100,
+    available: true,
   },
   {
     id: 13,
@@ -143,6 +156,7 @@ const products = [
     rating: "⭐⭐⭐⭐",
     label: "dayCare",
     points: 400,
+    available: true,
   },
   {
     id: 14,
@@ -152,6 +166,7 @@ const products = [
     rating: "⭐⭐⭐⭐",
     label: "dayCare",
     points: 200,
+    available: true,
   },
   {
     id: 15,
@@ -161,6 +176,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "both",
     points: 100,
+    available: false,
   },
   {
     id: 16,
@@ -170,6 +186,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "both",
     points: 100,
+    available: true,
   },
   {
     id: 17,
@@ -179,6 +196,7 @@ const products = [
     rating: "⭐⭐⭐⭐",
     label: "dayCare",
     points: 400,
+    available: true,
   },
   {
     id: 18,
@@ -188,6 +206,7 @@ const products = [
     rating: "⭐⭐⭐⭐⭐",
     label: "nightCare",
     points: 400,
+    available: true,
   },
 ];
 

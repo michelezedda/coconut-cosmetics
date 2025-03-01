@@ -19,7 +19,6 @@ function NightCare() {
         <Splide
           options={{
             perMove: 1,
-            gap: "1px",
             pagination: false,
             arrows: true,
             type: "loop",

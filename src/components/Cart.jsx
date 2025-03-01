@@ -1,4 +1,5 @@
 import { useAppContext } from "../context/AppContext";
+import toast from "react-hot-toast";
 
 function Cart() {
   const {
@@ -10,61 +11,69 @@ function Cart() {
     shippingFee,
   } = useAppContext();
 
+  const handleClick = () => {
+    toast.error("This is just a demo. Your wallet is safe... for now.");
+  };
+
   return (
     <>
       <div className="absolute top-14 right-0 w-[30rem] bg-white rounded-bl-xl text-black p-4">
         <h4 className="text-gray-600 font-semibold text-lg mt-4 mb-8">
           YOUR CART
         </h4>
-        {cart.length > 0 ? (
-          cart.map((item) => (
-            <div key={item.id} className="mt-2">
-              <div className="flex justify-between">
-                <div className="flex">
-                  <div className="w-15 h-15">
-                    <img src={item.img} alt={item.name} />
-                  </div>
-                  <div className="ml-4">
-                    <p className="font-semibold text-sm">{item.name}</p>
-                    <div className="rounded-full border px-1 border-gray-500">
-                      <p className="text-sm text-gray-500">
-                        Quantity:{" "}
-                        <span
-                          className="cursor-pointer mx-2"
-                          onClick={() => {
-                            removeFromCart(item.id);
-                          }}
-                        >
-                          -
-                        </span>{" "}
-                        {item.quantity}{" "}
-                        <span
-                          className="cursor-pointer mx-1"
-                          onClick={() => {
-                            increaseQuantity(item.id);
-                          }}
-                        >
-                          +
-                        </span>
+        <div className="max-h-[400px] overflow-y-auto pr-4">
+          {cart.length > 0 ? (
+            cart.map((item) => (
+              <div key={item.id} className="mt-2 ">
+                <div className="flex justify-between">
+                  <div className="flex">
+                    <div className="w-15 h-15">
+                      <img src={item.img} alt={item.name} />
+                    </div>
+                    <div className="ml-4">
+                      <p className="font-semibold text-sm">{item.name}</p>
+                      <div className="rounded-full border px-1 border-gray-500">
+                        <p className="text-sm text-gray-500">
+                          Quantity:{" "}
+                          <span
+                            className="cursor-pointer mx-2"
+                            onClick={() => {
+                              removeFromCart(item.id);
+                            }}
+                          >
+                            -
+                          </span>{" "}
+                          {item.quantity}{" "}
+                          <span
+                            className="cursor-pointer mx-1"
+                            onClick={() => {
+                              increaseQuantity(item.id);
+                            }}
+                          >
+                            +
+                          </span>
+                        </p>
+                      </div>
+                      <p className="text-sm  text-gray-500">
+                        {item.points * item.quantity} 🥥points
                       </p>
                     </div>
-                    <p className="text-sm  text-gray-500">
-                      {item.points * item.quantity} 🥥points
+                  </div>
+                  <div className="flex items-center">
+                    <p className="font-semibold">
+                      $ {(item.price * item.quantity).toFixed(2)}
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center">
-                  <p className="font-semibold">
-                    $ {(item.price * item.quantity).toFixed(2)}
-                  </p>
-                </div>
+                <hr className="text-gray-200 mt-2" />
               </div>
-              <hr className="text-gray-200 mt-2" />
-            </div>
-          ))
-        ) : (
-          <p className="text-gray-600 text-center mb-4">Your cart is empty.</p>
-        )}
+            ))
+          ) : (
+            <p className="text-gray-600 text-center mb-4">
+              Your cart is empty.
+            </p>
+          )}
+        </div>
         {totalPoints > 0 && (
           <p className="mt-2">Total cocopoints: {totalPoints} 🥥</p>
         )}
@@ -80,7 +89,9 @@ function Cart() {
           <p>Total:</p>
           <p>$ {(totalPrice + shippingFee).toFixed(2)}</p>
         </div>
-        <button className="myButton mt-4 w-full">CHECKOUT</button>
+        <button className="myButton mt-4 w-full" onClick={handleClick}>
+          CHECKOUT
+        </button>
       </div>
     </>
   );

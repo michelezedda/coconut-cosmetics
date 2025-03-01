@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex fixed w-full items-center justify-center bg-white z-10">
+      <div className="flex fixed top-8 w-full items-center justify-center bg-white z-10">
         <Link to="/">
           <img
             src="/media/logo.png"

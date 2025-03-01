@@ -40,3 +40,16 @@ body {
 .myButton:active {
   transform: scale(0.98);
 }
+
+@keyframes ticker {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.animate-ticker {
+  animation: ticker 20s linear infinite;
+  width: max-content;
+}

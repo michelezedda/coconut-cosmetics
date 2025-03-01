@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useMemo } from "react";
 
 const AppContext = createContext();
 
@@ -7,7 +7,7 @@ export function AppProvider({ children }) {
 
   const cartQuantity = cart.reduce((total, item) => total + item.quantity, 0);
 
-  // Function to add a product to the cart
+  // // Function to add a product to the cart
   const addToCart = (newItem) => {
     setCart((prevCart) => {
       let itemFound = false;
@@ -26,18 +26,16 @@ export function AppProvider({ children }) {
     });
   };
 
-  // Function to increase item quantity
+  // // Function to increase product quantity
   const increaseQuantity = (id) => {
     setCart((prevCart) =>
       prevCart.map((item) =>
-        item.id === id
-          ? { ...item, quantity: item.quantity + 1 }
-          : console.log("failed")
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
       )
     );
   };
 
-  // Function to remove a product from the cart
+  // // Function to remove a product from the cart or decrease its quantity
   const removeFromCart = (id) => {
     setCart((prevCart) =>
       prevCart
@@ -49,19 +47,19 @@ export function AppProvider({ children }) {
   };
 
   // Calculate total points
-  const totalPoints = cart.reduce(
-    (total, item) => total + item.points * item.quantity,
-    0
+  const totalPoints = useMemo(
+    () => cart.reduce((total, item) => total + item.points * item.quantity, 0),
+    [cart]
   );
 
   // Calculate subtotal price
-  const totalPrice = cart.reduce(
-    (total, item) => total + item.price * item.quantity,
-    0
+  const totalPrice = useMemo(
+    () => cart.reduce((total, item) => total + item.price * item.quantity, 0),
+    [cart]
   );
 
   // Calculate shipping fee
-  const shippingFee = totalPrice >= 50 ? 0 : 9.99;
+  const shippingFee = totalPrice === 0 || totalPrice >= 50 ? 0 : 9.99;
 
   return (
     <AppContext.Provider

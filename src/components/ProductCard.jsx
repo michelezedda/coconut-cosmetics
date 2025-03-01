@@ -1,8 +1,8 @@
-import { ShoppingBag } from "lucide-react";
-import toast, { Toaster } from "react-hot-toast";
+import { ShoppingBag, CircleCheck, CircleX } from "lucide-react";
+import toast from "react-hot-toast";
 import { useAppContext } from "../context/AppContext";
 
-function ProductCard({ id, name, img, price, rating, points }) {
+function ProductCard({ id, name, img, price, rating, points, available }) {
   const { addToCart } = useAppContext();
 
   const handleClick = () => {
@@ -22,13 +22,28 @@ function ProductCard({ id, name, img, price, rating, points }) {
           <p className="text-sm">{points} 🥥 points</p>
           <p className="font-semibold text-md">{name}</p>
           <p className="font-semibold text-red-600 text-xl">$ {price}</p>
+          {available ? (
+            <p className="flex items-center gap-1 text-gray-700">
+              <CircleCheck color="green" size={15} /> Available
+            </p>
+          ) : (
+            <p className="flex items-center gap-1 text-gray-700">
+              <CircleX color="red" size={15} /> Not available
+            </p>
+          )}
         </div>
-        <button
-          className="absolute top-42 right-1 rounded-full bg-slate-600 p-3 cursor-pointer active:scale-98 hover:bg-teal-700"
-          onClick={handleClick}
-        >
-          <ShoppingBag color="white" size={25} />
-        </button>
+        {available ? (
+          <button
+            className="absolute top-43 right-1 rounded-full bg-slate-600 p-3 cursor-pointer active:scale-98 hover:bg-teal-700"
+            onClick={handleClick}
+          >
+            <ShoppingBag color="white" size={25} />
+          </button>
+        ) : (
+          <button className="absolute top-43 right-1 rounded-full p-3 bg-red-700">
+            <ShoppingBag color="white" size={25} />
+          </button>
+        )}
       </div>
     </>
   );

@@ -61,7 +61,7 @@ function Footer() {
             />
           </span>
           <p>
-            Copyright {new Date().getFullYear()} coconut. cosmetics - All rights
+            {new Date().getFullYear()} coconut. cosmetics&#174; - All rights
             reserved
           </p>
         </div>
