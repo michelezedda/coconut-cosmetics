@@ -26,7 +26,7 @@ export function AppProvider({ children }) {
     });
   };
 
-  // // Function to increase product quantity
+  // Function to increase product quantity
   const increaseQuantity = (id) => {
     setCart((prevCart) =>
       prevCart.map((item) =>
@@ -35,7 +35,7 @@ export function AppProvider({ children }) {
     );
   };
 
-  // // Function to remove a product from the cart or decrease its quantity
+  // Function to remove a product from the cart or decrease its quantity
   const removeFromCart = (id) => {
     setCart((prevCart) =>
       prevCart
