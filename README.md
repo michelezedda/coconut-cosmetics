@@ -6,9 +6,8 @@
 
 <h2 align="center">coconut. cosmetics: your path to radiant, healthy skin</h2>
 
-## Key Features
-- **Navbar:** A responsive navigation bar for easy access to cart and account management.
-- **Cart:** A fully functional shopping cart with the ability to add, remove, and update items in real-time.
+## Introduction
+coconut. cosmetics is a fast, user-friendly skincare web app designed for seamless product exploration and an intuitive shopping experience.
 
 ## Technologies Used
 - **HTML5 & CSS3**: Markup and styling languages for web development.
