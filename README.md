@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://i.ibb.co/WvX8qp2x/coconut-project.png" alt="coconut. cosmetics" width="1100">
+  <img src="https://i.ibb.co/9mxVsDPY/coconut-project.png" alt="coconut. cosmetics" width="1100">
   <br>
 </h1>
 
