@@ -7,7 +7,7 @@
 <h2 align="center">coconut. cosmetics: your path to radiant, healthy skin</h2>
 
 ## Introduction
-coconut. cosmetics is a fast, user-friendly skincare web app designed for seamless product exploration and an intuitive shopping experience.
+coconut. cosmetics is a fast, responsive, and minimalist skincare web app that delivers a smooth, user-friendly experience. It’s designed for easy product discovery and a seamless shopping process, making it easy to explore and purchase skincare products.
 
 ## Technologies Used
 - **HTML5 & CSS3**: Markup and styling languages for web development.
