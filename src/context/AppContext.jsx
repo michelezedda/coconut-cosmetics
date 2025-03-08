@@ -7,7 +7,7 @@ export function AppProvider({ children }) {
 
   const cartQuantity = cart.reduce((total, item) => total + item.quantity, 0);
 
-  // // Function to add a product to the cart
+  // Function to add a product to the cart
   const addToCart = (newItem) => {
     setCart((prevCart) => {
       let itemFound = false;
