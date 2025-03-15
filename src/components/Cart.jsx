@@ -83,7 +83,7 @@ function Cart() {
         </div>
         <div className="flex justify-between">
           <p>Shipping:</p>
-          <p>{shippingFee === 0 ? "Free Shipping!" : shippingFee}</p>
+          <p>$ {shippingFee === 0 ? "Free Shipping!" : shippingFee}</p>
         </div>
         <div className="flex justify-between font-semibold text-red-700">
           <p>Total:</p>
