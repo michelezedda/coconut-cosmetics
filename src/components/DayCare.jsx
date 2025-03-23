@@ -9,7 +9,7 @@ function DayCare() {
   );
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-between items-center mb-6 pt-35 ">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-6 pt-35">
         <div className="text-center md:text-left md:ml-2">
           <h2 className="text-2xl font-semibold">DAY CARE</h2>
           <p className="text-lg mt-2">Brighten and protect daily</p>
