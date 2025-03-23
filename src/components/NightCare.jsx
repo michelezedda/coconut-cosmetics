@@ -10,10 +10,7 @@ function NightCare() {
     (product) => product.label === "nightCare" || product.label === "both"
   );
 
-  const ProductCard = lazy(async () => {
-    await new Promise((resolve) => setTimeout(resolve, 500));
-    return import("./ProductCard");
-  });
+  const ProductCard = lazy(() => import("./ProductCard"));
 
   return (
     <>
