@@ -1,10 +1,8 @@
 import { ShoppingBag, CircleCheck, CircleX } from "lucide-react";
 import toast from "react-hot-toast";
 import { useAppContext } from "../context/AppContext";
-import { useState } from "react";
 
 function ProductCard({ id, name, img, price, rating, points, available }) {
-  const [loaded, setLoaded] = useState(false);
   const { addToCart } = useAppContext();
 
   const handleClick = () => {
@@ -18,15 +16,7 @@ function ProductCard({ id, name, img, price, rating, points, available }) {
   return (
     <>
       <div className="relative bg-white rounded-lg border border-gray-300 mx-2 hover:bg-gray-50">
-        <img
-          src={img}
-          alt={name}
-          className={`rounded-t-lg transition-opacity duration-300 ${
-            loaded ? "opacity-100" : "opacity-0"
-          }`}
-          loading="lazy"
-          onLoad={() => setLoaded(true)}
-        />
+        <img src={img} alt={name} className="rounded-t-lg" loading="lazy" />
         <div className="flex flex-col p-4">
           <p className="text-sm">{rating}</p>
           <p className="text-sm">{points} 🥥 points</p>
