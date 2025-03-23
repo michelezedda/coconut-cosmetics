@@ -1,12 +1,16 @@
-import ProductCard from "./ProductCard";
 import products from "../data/products";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { lazy, Suspense } from "react";
+import SkeletonCard from "./SkeletonCard";
 
 function DayCare() {
   const dayCareProducts = products.filter(
     (product) => product.label === "dayCare" || product.label === "both"
   );
+
+  const ProductCard = lazy(() => import("./ProductCard"));
+
   return (
     <>
       <div className="flex flex-col md:flex-row justify-between items-center mb-6 pt-35">
@@ -27,7 +31,9 @@ function DayCare() {
         >
           {dayCareProducts.map((product) => (
             <SplideSlide key={product.id}>
-              <ProductCard {...product} />
+              <Suspense fallback={<SkeletonCard />}>
+                <ProductCard {...product} />
+              </Suspense>
             </SplideSlide>
           ))}
         </Splide>
