@@ -9,7 +9,10 @@ function DayCare() {
     (product) => product.label === "dayCare" || product.label === "both"
   );
 
-  const ProductCard = lazy(() => import("./ProductCard"));
+  const ProductCard = lazy(async () => {
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    return import("./ProductCard");
+  });
 
   return (
     <>
