@@ -10,15 +10,71 @@
 coconut. cosmetics is a fast, responsive, and minimalist skincare web app that delivers a smooth, user-friendly experience. It’s designed for easy product discovery and a seamless shopping process, making it easy to explore and purchase skincare products.
 
 ## Technologies Used
-- **HTML5 & CSS3**: Markup and styling languages for web development.
-- **Tailwind CSS**: CSS extension language for more efficient styling.
-- **Git**: Version control system for tracking changes and collaborating.
-- **React**: JavaScript library for dynamic user interfaces.
-- **Vite**: Front-end dev tool improving developer experience.
-- **react-hot-toast**: A React library for displaying customizable notifications.
-- **Splide**: A JavaScript library for creating responsive and accessible arousels.
-- **Lucide**: An icon library for react applications.
-- **Formik**: A React library for building and managing forms efficiently.
 
-## Project Link
-Explore coconut. cosmetics: :link: [coconut. cosmetics](https://coconut-cosmetics.vercel.app/)
+- **Frontend:**
+  - React
+  - Tailwind CSS
+  - Vite (for faster builds)
+  - react-hot-toast (for toast notifications)
+  - react-router-dom (for page navigation)
+  - Splide (carousel component)
+  - Lucide (for UI icons)
+  - Formik (for building and managing forms efficiently)
+ 
+- **Version Control:**
+  - Git
+
+- **Hosting:**
+  - Vercel (for deploying the app)
+
+## Live Demo
+
+You can try out Coconut Cosmetics live here: :link: [coconut. cosmetics](https://coconut-cosmetics.vercel.app/)
+
+## Installation
+
+To run Coconut Cosmetics locally, follow these steps:
+
+### Prerequisites
+
+Ensure the following tools are installed on your machine:
+
+- **Node.js** (>=16.x)
+- **npm** or **yarn**
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/michelezedda/coconut-cosmetics.git
+   
+2. Navigate into the project directory:
+
+    ```bash
+    cd rentme
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+    or if you're using Yarn:
+
+    ```bash
+    yarn install
+    ```
+
+4. Run the app locally:
+
+    ```bash
+    npm run dev
+    ```
+
+    or with Yarn:
+
+    ```bash
+    yarn dev
+    ```
