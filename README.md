@@ -52,7 +52,7 @@ Ensure the following tools are installed on your machine:
 2. Navigate into the project directory:
 
     ```bash
-    cd rentme
+    cd coconut-cosmetics
     ```
 
 3. Install dependencies:
