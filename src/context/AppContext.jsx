@@ -1,9 +1,10 @@
-import { createContext, useContext, useState, useMemo } from "react";
+import { createContext, useContext, useMemo } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 const AppContext = createContext();
 
 export function AppProvider({ children }) {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useLocalStorage("count", []);
 
   const cartQuantity = cart.reduce((total, item) => total + item.quantity, 0);
 
