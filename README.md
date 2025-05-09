@@ -20,6 +20,7 @@ coconut. cosmetics is a fast, responsive, and minimalist skincare web app that d
   - Splide (carousel component)
   - Lucide (for UI icons)
   - Formik (for building and managing forms efficiently)
+  - localStorage (for persisting client-side data)
  
 - **Version Control:**
   - Git
