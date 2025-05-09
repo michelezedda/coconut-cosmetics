@@ -3,7 +3,7 @@ function SkeletonCard() {
     <>
       <div className="relative bg-white rounded-lg border border-gray-300 mx-2 hover:bg-gray-50">
         <img
-          src="/media/empty-img.png"
+          src="/media/empty-img.webp"
           className="rounded-t-lg animate-pulse"
           loading="lazy"
         />
