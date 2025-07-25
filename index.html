@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html lang="en_US">
   <head>
+    <!-- Charset & Compatibility -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
-    <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="coconut cosmetics" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Coconut Cosmetics: your path to radiant, healthy skin with natural coconut-based beauty products."
+    />
+    <meta
+      name="keywords"
+      content="coconut cosmetics, skincare, natural products, beauty, radiant skin, healthy skin"
+    />
+    <meta name="author" content="Michele Zedda" />
+    <meta name="designer" content="Michele Zedda - https://michelezedda.com" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://coconut.vercel.app/" />
+
+    <!-- Open Graph Meta Tags (Social Sharing) -->
+    <meta property="og:title" content="Coconut Cosmetics" />
     <meta
       property="og:description"
-      content="coconut cosmetics: your path to radiant, healthy skin."
+      content="Coconut Cosmetics: your path to radiant, healthy skin with natural coconut-based beauty products."
     />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://coconut.vercel.app/" />
     <meta property="og:image" content="https://i.ibb.co/9sWpdnb/coconut.png" />
-    <meta property="og:locale" content="en" />
+    <meta property="og:site_name" content="Coconut Cosmetics" />
+    <meta property="og:locale" content="en_US" />
 
+    <!-- PWA / Mobile App Support -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Coconut Cosmetics" />
+    <meta name="application-name" content="Coconut Cosmetics" />
+    <meta name="theme-color" content="#f5f5f5" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
+    <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
+
+    <!-- Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
       rel="stylesheet"
     />
 
-    <title>coconut cosmetics</title>
+    <!-- Page Title -->
+    <title>Coconut Cosmetics</title>
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Coconut Cosmetics",
+        "url": "https://coconut.vercel.app",
+        "logo": "https://i.ibb.co/9sWpdnb/coconut.png",
+        "description": "Coconut Cosmetics: your path to radiant, healthy skin with natural coconut-based beauty products.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Coconut Cosmetics"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Michele Zedda"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
