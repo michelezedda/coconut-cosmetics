@@ -79,3 +79,7 @@ Ensure the following tools are installed on your machine:
     ```bash
     yarn dev
     ```
+
+    ## Screenshots
+   <br>
+  <img src="https://i.ibb.co/RG6kksxR/screencapture-coconut-cosmetics-vercel-app-2025-08-12-19-31-42.png">
